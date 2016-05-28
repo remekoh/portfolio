@@ -1,0 +1,532 @@
+/*
+Theme: Eyen
+Description: Portfolio Site for reme{e}koh
+Author: Reme Ekoh
+Author URI: http://www.reme.codes
+Version: 1.5
+*/
+
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of reset */
+
+/*  ==================================================================
+	Custom Styles Begin - General Styles
+================================================================== */
+
+html { height: 100%; }
+
+body {
+	line-height: 1;
+	color: #000;
+	font: 16px "Open Sans", Helvetica, Arial, sans-serif;
+	background: #fff;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	overflow-x: hidden;
+}
+
+input,
+select,
+textarea {
+	font: 16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+::selection {
+	color: #fff;
+  background: #5F62A7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-bottom: .625rem;
+	line-height: 1.1em;
+}
+
+h1 {
+	font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: .875rem;
+}
+
+h6 {
+  font-size: .750rem;
+}
+
+p {
+  margin: 0 0 .688rem;
+}
+
+.prom {
+  margin-bottom: 1.375rem;
+  font-size: 1.0rem;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+@media (min-width: 48rem) {
+  .prom {
+    font-size: 1.313rem;
+  }
+}
+
+a {
+	color: #62a75f;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #62a75f;
+	border-bottom: .08rem solid #62a75f;
+}
+
+img {
+	vertical-align: middle;
+}
+
+/*  ==================================================================
+	Grid/Layout
+================================================================== */
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: .938rem;
+	padding-left: .938rem;
+}
+
+.container:after {
+  clear: both;
+}
+
+@media (min-width: 48rem) {
+	.container { width: 46.938rem;}
+}
+
+@media (min-width: 62rem) {
+	.container {width: 61.875rem;}
+}
+
+@media (min-width: 78.75rem) {
+	.container {width: 76.875rem;}
+}
+
+.row {
+  margin-left: -.938rem;
+  margin-right: -.938rem;
+}
+
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after,
+.container:after,
+.row:after {
+  clear: both;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: .938rem;
+  padding-right: .938rem;
+ }
+
+.col-12 {
+  width: 100%;
+}
+.col-11 {
+  width: 91.66666667%;
+}
+.col-10 {
+  width: 83.33333333%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-8 {
+  width: 66.66666667%;
+}
+.col-7 {
+  width: 58.33333333%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-5 {
+  width: 41.66666667%;
+}
+.col-4 {
+  width: 33.33333333%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-2 {
+  width: 16.66666667%;
+}
+.col-1 {
+  width: 8.33333333%;
+}
+
+@media (max-width: 30rem) {
+	.col-small {
+		width: 100%;
+	}
+}
+
+.margin-tb {
+	margin-top: 1.875rem !important;
+  margin-bottom: 1.875rem !important;
+}
+
+.margin-b {
+  margin-bottom: 1.875rem !important;
+}
+
+.margin-t {
+	margin-top: 1.875rem !important;
+}
+
+/*  ==================================================================
+	Header -- Profile
+================================================================== */
+
+#profile {
+	background-image:
+	linear-gradient(rgba(95, 98, 167, 0.85), rgba(95, 98, 167, 0.85)),
+	url(../images/Houston_Skyline.jpg);
+	border-bottom: .063rem ridge #555896;
+}
+
+.profile-header {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 18.75rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  text-align: center;
+  background-size: cover;
+  border: 0;
+}
+
+@media (min-width : 30rem) {
+	.profile-header {
+		height: 25rem;
+	}
+}
+
+@media (min-width : 48rem) {
+	.profile-header {
+		height: 31.25rem;
+	}
+}
+
+.profile-header .container {
+	display: table-cell;
+  width: 1000000px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.profile-inner {
+	max-width: 18.75rem;
+	margin: 0 auto;
+}
+
+.profile-image {
+	display: inline-block;
+	width: 80px;
+	margin-right: 0;
+	border-radius: 100%;
+	border: .063rem solid #5F62A7;
+	box-shadow: 0px 0px 0px 6px #fff;
+}
+
+@media (max-width: 41.69rem) {
+	.profile-image { margin-top: 1.875rem; }
+}
+
+@media (min-width: 48rem) {
+	.profile-image { width: 6.875rem; }
+}
+
+.profile-name {
+	text-transform: none;
+	margin-top: 1.250rem;
+	margin-bottom: .25rem;
+	font-family: 'Sofia', cursive;
+	color: #fff;
+}
+
+.profile-desc {
+	font-weight: 500;
+	font-size: 1.0rem;
+	color: #fff;
+	margin-bottom: 1.0rem;
+}
+
+.hire { font-family: "Roboto", Helvetica, Arial, sans-serif; }
+
+ /*==================================================================
+	Sections
+==================================================================*/
+
+.section-title {
+	text-align: center;
+	letter-spacing: 0;
+	margin-bottom: 20px;
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+  color: #454545;
+  font-weight: 300;
+	position: relative;
+	letter-spacing: 0.1em;
+}
+
+.line-color {
+	display: block;
+	width: 10rem;
+	height: .063rem;
+	background: #5F62A7;
+	margin: 0 auto;
+	margin-bottom: 2.5rem;
+	opacity: .8;
+}
+
+@media (max-width: 48rem) {
+	.line-color {	margin-bottom: 1.5em; }
+}
+
+/* ==================================================================
+	Intro Section
+================================================================== */
+
+.intro {
+	margin-top: 1.875rem !important;
+	text-align: center;
+}
+
+/* .intro h2 {padding-top: 1.375rem;} */
+
+.creative {
+	color: #669;
+	/* font-weight: bold; */
+}
+
+/* ==================================================================
+	Projects Section
+================================================================== */
+
+.card-block {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  display: block;
+  margin-bottom: .75rem;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: .625rem;
+}
+
+.project-title {
+	margin-top: 0;
+	text-align: center;
+	clear: both;
+	color:#5F62A7;
+}
+
+.project-shot {
+	display: block;
+  height: auto;
+  max-width: 100%;
+  border-radius: .375em;
+}
+
+button {
+	border: 2px solid #62a75f;
+	padding: .500rem 1.0rem;
+  font-size: 1.0rem;
+  line-height: 1.5;
+  border-radius: .313rem;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	cursor: pointer;
+  -webkit-appearance: button;
+  color:#62a75f;
+  background-color: transparent;
+  border-color:#62a75f;
+  text-align: center;
+}
+
+button:hover {
+  /* background-color: #4CAF50; */
+  color: white !important;
+  cursor: pointer;
+}
+
+@media (max-width: 48rem) {
+	button {
+		padding: .250rem .500rem;
+	}
+}
+
+/* ==================================================================
+	Social Media
+================================================================== */
+
+.social-icons {
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 3.125rem;
+	margin-top: -1.250rem;
+	margin-bottom: 2.5rem;
+	margin-left: -1.250rem;
+}
+
+.social-icons li {
+	margin: 0;
+	display: inline-block;
+	padding: .625rem;
+}
+
+.social-icons li a {
+	display: block;
+	background: transparent;
+	position: relative;
+	width: 3.125rem;
+	height: 3.125rem;
+	text-align: center;
+	line-height: 3.125rem;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	border-bottom: none;
+}
+
+.social-icons li a i.fa {
+	line-height: 3.125rem;
+	font-size: 2.188rem;
+}
+
+.social-icons a.linkedin:hover {	background: #0077B5; }
+
+.social-icons a.linkedin i.fa { color: #0077B5; }
+
+.social-icons a.github:hover { background: #000; }
+
+.social-icons a.github i.fa { color: #000; }
+
+.social-icons li a:hover i.fa { color: #fff; }
+
+.social-icons a.twitter:hover { background: #55acee; }
+
+.social-icons a.twitter i.fa { color: #55acee; }
+
+/* ==================================================================
+	Footer
+================================================================== */
+
+.footer {
+	position: relative;
+	text-align: center;
+	border-top: .063rem ridge #ddd;
+	padding-top: .938rem;
+}
+
+/* ==================================================================
+	Extra
+================================================================== */
+
+.brand { color: #5F62A7; }
+
+
+
