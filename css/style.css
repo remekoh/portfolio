@@ -420,10 +420,12 @@ img {
 }
 
 .project-shot {
-	display: block;
+	/* display: block; */
   height: auto;
   max-width: 100%;
-  border-radius: .375em;
+  border-radius: .375rem;
+  text-align: center;
+  margin-bottom: 1.0rem;
 }
 
 button {
