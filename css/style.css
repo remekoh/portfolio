@@ -219,6 +219,54 @@ img {
 	height: auto; */
 }
 
+/* Buttons */
+[role="button"] {
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #62A75F;
+  border-color: #62A75F;
+}
+
+.btn-success:hover {
+  color: #fff;
+  background-color: #589655;
+  border-color: #589655;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+	padding: .625em 1em;
+	font-size: 1.125em;
+	line-height: 1.3333333;
+	border-radius: 6px;
+}
+
+
 /*  ==================================================================
 	Grid/Layout
 ================================================================== */
@@ -353,7 +401,7 @@ Header - Navigation
   top: 0;
   left: 0;
   background: #fff;
-  border-bottom: 1px solid #5F62A7;
+  border-bottom: 1px ridge #fff;
   z-index: 100;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
@@ -365,7 +413,8 @@ Header - Navigation
   /* width: 100%; */
   height: auto;
   float: left;
-  margin-top: 12px;
+  margin-top: 26px;
+  margin-left: 10px;
 }
 
 .sticky-header .logo img,
@@ -502,7 +551,7 @@ Profile Section
   vertical-align: middle;
 }
 
-.profile-inner {
+.profile-header .profile-inner {
 	max-width: 18.75em;
 	margin: 0 auto;
 }
@@ -513,7 +562,7 @@ Profile Section
 	margin-right: 0;
 	border-radius: 100%;
 	border: .063rem solid #5F62A7;
-	box-shadow: 0px 0px 0px 6px #fff;
+	box-shadow: 0 0 0 6px #fff;
 	-webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
 	animation-duration: 3s;
 }
@@ -528,7 +577,7 @@ Profile Section
 
 .profile-name {
 	text-transform: none;
-	margin-top: 1.250em;
+	/* margin-top: 1.250em; */
 	margin-bottom: .25em;
 	font-family: 'Sofia', cursive;
 	color: #fff;
@@ -541,7 +590,7 @@ Profile Section
 	margin-bottom: 1.0em;
 }
 
-.hire { font-family: "Roboto", Helvetica, Arial, sans-serif; }
+.hire { font-family: 'Roboto', Helvetica, Arial, sans-serif; }
 
  /*==================================================================
 	Sections
@@ -757,7 +806,59 @@ Profile Section
 * Hide visually and from screen readers
 */
 
-.hidden {
+.hidden-xs-up {
+  display: none !important;
+}
+
+@media (max-width: 33.938em) {
+  .hidden-xs-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 34em) {
+  .hidden-sm-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 47.938em) {
+  .hidden-sm-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 48em) {
+  .hidden-md-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 61.938em) {
+  .hidden-md-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 62em) {
+  .hidden-lg-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 74.938em) {
+  .hidden-lg-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 75em) {
+  .hidden-xl-up {
+    display: none !important;
+  }
+}
+
+.hidden-xl-down {
   display: none !important;
 }
 
