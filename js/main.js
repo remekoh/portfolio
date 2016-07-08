@@ -10,7 +10,7 @@ Version: 1.0
 var today = new Date();
 var weekdays = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
 var day = weekdays[today.getDay()];
-$('#happyday').append("Enjoy the rest of your " + day + ".");
+$('#happyday').append("Enjoy the rest of this great " + day + ".");
 
 ////////////////////////////////////////////////////////////
 //INTERNAL ANCHOR LINKS SCROLLING (NAVIGATION)

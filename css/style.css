@@ -401,7 +401,7 @@ Header - Navigation
   top: 0;
   left: 0;
   background: #fff;
-  border-bottom: 1px ridge #fff;
+  border-bottom: 1px ridge #ccc;
   z-index: 100;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
@@ -624,12 +624,16 @@ Profile Section
 }
 
 /* ==================================================================
-	Intro Section
+	About Section
 ================================================================== */
 
 .about{
 	margin-top: 1.875rem !important;
 	text-align: center;
+}
+
+.consult {
+	text-decoration: line-through;
 }
 
 .creative {
@@ -644,6 +648,22 @@ Profile Section
 .prom a:hover {
 	color: #62a75f;
 	border-bottom: .08rem solid #62a75f;
+}
+
+.about h3 {
+	text-transform: none;
+	font: 21px "Open Sans", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	margin-bottom: 22px;
+}
+
+@media (max-width: 768px) {
+	.about h3 {
+		text-transform: none;
+		font: 16px "Open Sans", Helvetica, Arial, sans-serif;
+		font-weight: 300;
+		margin-bottom: 22px;
+	}
 }
 
 /* ==================================================================
