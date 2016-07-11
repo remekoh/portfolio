@@ -97,9 +97,7 @@ body.space-top {
     padding-top: 70px;
 }
 
-/*
- * Browser Upgrade class
- */
+/* Browser Upgrade class */
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -155,36 +153,36 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	font-weight: 300;
-	margin-bottom: .625em;
-	line-height: 1.1em;
+	margin-bottom: .625rem;
+	line-height: 1.1rem;
 }
 
 h1 {
-	font-size: 2.25em;
+	font-size: 2.25rem;
 }
 
 h2 {
-  font-size: 1.875em;
+  font-size: 1.875rem;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 1.125em;
+  font-size: 1.125rem;
 }
 
 h5 {
-  font-size: .875em;
+  font-size: .875rem;
 }
 
 h6 {
-  font-size: .750em;
+  font-size: .750rem;
 }
 
 p {
-  margin: 0 0 .688em;
+  margin: 0 0 .688rem;
 }
 
 a,
@@ -201,15 +199,15 @@ ul {
 }
 
 .prom {
-  margin-bottom: 1.375em;
-  font-size: 1.0em;
+  margin-bottom: 1.375rem;
+  font-size: 1.0rem;
   font-weight: 300;
-  line-height: 1.4em;
+  line-height: 1.4rem;
 }
 
 @media (min-width: 48rem) {
   .prom {
-    font-size: 1.313em;
+    font-size: 1.313rem;
   }
 }
 
@@ -260,8 +258,8 @@ img {
 
 .btn-lg,
 .btn-group-lg > .btn {
-	padding: .625em 1em;
-	font-size: 1.125em;
+	padding: .625em 1rem;
+	font-size: 1.125rem;
 	line-height: 1.3333333;
 	border-radius: 6px;
 }
@@ -274,8 +272,8 @@ img {
 .container {
 	margin-right: auto;
 	margin-left: auto;
-	padding-right: .938em;
-	padding-left: .938em;
+	padding-right: .938rem;
+	padding-left: .938rem;
 }
 
 .container:after {
@@ -283,20 +281,20 @@ img {
 }
 
 @media (min-width: 48rem) {
-	.container { width: 46.938em;}
+	.container { width: 46.938rem;}
 }
 
 @media (min-width: 62rem) {
-	.container {width: 61.875em;}
+	.container {width: 61.875rem;}
 }
 
 @media (min-width: 78.75rem) {
-	.container {width: 76.875em;}
+	.container {width: 76.875rem;}
 }
 
 .row {
-  margin-left: -.938em;
-  margin-right: -.938em;
+  margin-left: -.938rem;
+  margin-right: -.938rem;
 }
 
 /*
@@ -331,45 +329,45 @@ img {
   float: left;
   position: relative;
   min-height: 1px;
-  padding-left: .938em;
-  padding-right: .938em;
+  padding-left: .938rem;
+  padding-right: .938rem;
 }
 
 .col-12 {
   width: 100%;
 }
 .col-11 {
-  width: 91.66666667%;
+  width: 91.666667%;
 }
 .col-10 {
-  width: 83.33333333%;
+  width: 83.333333%;
 }
 .col-9 {
   width: 75%;
 }
 .col-8 {
-  width: 66.66666667%;
+  width: 66.666667%;
 }
 .col-7 {
-  width: 58.33333333%;
+  width: 58.333333%;
 }
 .col-6 {
   width: 50%;
 }
 .col-5 {
-  width: 41.66666667%;
+  width: 41.666667%;
 }
 .col-4 {
-  width: 33.33333333%;
+  width: 33.333333%;
 }
 .col-3 {
   width: 25%;
 }
 .col-2 {
-  width: 16.66666667%;
+  width: 16.666667%;
 }
 .col-1 {
-  width: 8.33333333%;
+  width: 8.333333%;
 }
 
 @media (max-width: 30rem) {
@@ -456,7 +454,7 @@ Header - Navigation
   padding: 30px 5px;
   border-top: 4px solid transparent;
   color: #313447;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 300;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
@@ -506,8 +504,6 @@ Header - Navigation
   margin-bottom: 2px;
 }
 
-
-
 /*  ==================================================================
 Profile Section
 ================================================================== */
@@ -517,15 +513,15 @@ Profile Section
 	linear-gradient(rgba(95, 98, 167, 0.85), rgba(95, 98, 167, 0.85)),
 	url(../images/Houston_Skyline.jpg);
 	border-bottom: .063rem ridge #555896;
-	margin-top: 1.125em;
+	margin-top: 1.125rem;
 }
 
 .profile-header {
   position: relative;
   display: table;
   width: 100%;
-  height: 18.75em;
-  padding-bottom: 3em;
+  height: 18.75rem;
+  padding-bottom: 3rem;
   margin-bottom: 0;
   text-align: center;
   background-size: cover;
@@ -534,13 +530,13 @@ Profile Section
 
 @media (min-width : 30rem) {
 	.profile-header {
-		height: 25em;
+		height: 25rem;
 	}
 }
 
 @media (min-width : 48rem) {
 	.profile-header {
-		height: 31.25em;
+		height: 31.25rem;
 	}
 }
 
@@ -552,7 +548,7 @@ Profile Section
 }
 
 .profile-header .profile-inner {
-	max-width: 18.75em;
+	max-width: 18.75rem;
 	margin: 0 auto;
 }
 
@@ -568,26 +564,26 @@ Profile Section
 }
 
 @media (max-width: 41.69rem) {
-	.profile-image { margin-top: 1.875em; }
+	.profile-image { margin-top: 1.875rem; }
 }
 
 @media (min-width: 48rem) {
-	.profile-image { width: 6.875em; }
+	.profile-image { width: 6.875rem; }
 }
 
 .profile-name {
 	text-transform: none;
-	/* margin-top: 1.250em; */
-	margin-bottom: .25em;
+	/* margin-top: 1.250rem; */
+	margin-bottom: .25rem;
 	font-family: 'Sofia', cursive;
 	color: #fff;
 }
 
 .profile-desc {
 	font-weight: 500;
-	font-size: 1.0em;
+	font-size: 1.0rem;
 	color: #fff;
-	margin-bottom: 1.0em;
+	margin-bottom: 1.0rem;
 }
 
 .hire { font-family: 'Roboto', Helvetica, Arial, sans-serif; }
@@ -606,21 +602,21 @@ Profile Section
   color: #454545;
   font-weight: 300;
 	position: relative;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.1rem;
 }
 
 .line-color {
 	display: block;
-	width: 10em;
-	height: .063em;
+	width: 10rem;
+	height: .063rem;
 	background: #5F62A7;
 	margin: 0 auto;
-	margin-bottom: 2.5em;
+	margin-bottom: 2.5rem;
 	opacity: .8;
 }
 
 @media (max-width: 48rem) {
-	.line-color {	margin-bottom: 1.5em; }
+	.line-color {	margin-bottom: 1.5rem; }
 }
 
 /* ==================================================================
@@ -634,10 +630,11 @@ Profile Section
 
 .consult {
 	text-decoration: line-through;
+	color: #5F62A7;
 }
 
 .creative {
-	color: #669;
+	color: #5F62A7;
 }
 
 .prom a {
@@ -652,7 +649,7 @@ Profile Section
 
 .about h3 {
 	text-transform: none;
-	font: 21px "Open Sans", Helvetica, Arial, sans-serif;
+	font: 1.313em 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	margin-bottom: 22px;
 }
@@ -660,28 +657,45 @@ Profile Section
 @media (max-width: 768px) {
 	.about h3 {
 		text-transform: none;
-		font: 16px "Open Sans", Helvetica, Arial, sans-serif;
+		font: 1em 'Open Sans', Helvetica, Arial, sans-serif;
 		font-weight: 300;
 		margin-bottom: 22px;
 	}
 }
+
+.about h4 {
+	color:#5F62A7;
+	font-size: 21px;
+	text-transform: none;
+}
+
+.service {
+	border: 1px solid #eee;
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	line-height: 89px;
+	margin: 0 auto;
+}
+
+.fa { color: #5F62A7; }
 
 /* ==================================================================
 	Projects Section
 ================================================================== */
 
 .card-block {
-  padding: 1.25em;
+  padding: 1.25rem;
   text-align: center;
 }
 
 .card {
   position: relative;
   display: block;
-  margin-bottom: .75em;
+  margin-bottom: .75rem;
   background-color: #fff;
   border: 1px solid #e5e5e5;
-  border-radius: .625em;
+  border-radius: .625rem;
 }
 
 .project-title {
@@ -693,24 +707,24 @@ Profile Section
 
 @media (max-width: 47.938rem) and (min-width: 30rem) {
 	.project-title {
-		font-size: 1.0em;
+		font-size: 1.0rem;
 	}
 }
 
 .project-shot {
   height: auto;
   max-width: 100%;
-  border-radius: .375em;
+  border-radius: .375rem;
   text-align: center;
-  margin-bottom: 1.125em;
+  margin-bottom: 1.125rem;
 }
 
 .proj-link {
 	text-decoration: none;
-  border-radius: .313em;
-  font-size: 1.0em;
+  border-radius: .313rem;
+  font-size: 1.0rem;
   border: 1px solid #fff;
-  padding: .500rem 1.0em;
+  padding: .500rem 1.0rem;
   cursor: pointer;
   color: #fff;
   background-color: #62a75f;
@@ -727,14 +741,14 @@ Profile Section
 
 @media (max-width: 48rem) {
 	.proj-link {
-		padding: .250rem .500em;
+		padding: .250em .500rem;
 	}
 }
 
 @media (max-width: 47.938rem) and (min-width: 30rem) {
 	.proj-link {
 		min-width: 75%;
-		margin-bottom: .625em;
+		margin-bottom: .625rem;
 	}
 }
 
@@ -748,26 +762,26 @@ Profile Section
 	position: relative;
 	display: block;
 	width: 100%;
-	height: 3.125em;
-	margin-top: -1.250em;
-	margin-bottom: 2.5em;
-	margin-left: -1.250em;
+	height: 3.125rem;
+	margin-top: -1.250rem;
+	margin-bottom: 2.5rem;
+	margin-left: -1.250rem;
 }
 
 .social-icons li {
 	margin: 0;
 	display: inline-block;
-	padding: .625em;
+	padding: .625rem;
 }
 
 .social-icons li a {
 	display: block;
 	background: transparent;
 	position: relative;
-	width: 3.125em;
-	height: 3.125em;
+	width: 3.125rem;
+	height: 3.125rem;
 	text-align: center;
-	line-height: 3.125em;
+	line-height: 3.125rem;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
@@ -778,7 +792,7 @@ Profile Section
 
 .social-icons li a i.fa {
 	line-height: 50px;
-	font-size: 2.188em;
+	font-size: 2.188rem;
 }
 
 .social-icons a.linkedin:hover {	background: #0077B5; }
@@ -802,14 +816,14 @@ Profile Section
 .footer {
 	position: relative;
 	text-align: center;
-	border-top: .063rem ridge #ddd;
-	padding-top: .938em;
-	padding-bottom: .938em;
+	border-top: .063rem dashed #5F62A7;
+	padding-top: .938rem;
+	padding-bottom: .938rem;
 
 }
 
 .footer p {
-	margin-bottom: -.188em;
+	margin-bottom: -.188rem;
 }
 
 /* ==================================================================
