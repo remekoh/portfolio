@@ -497,13 +497,13 @@ Header - Navigation
 }
 
 .main-navi ul li:hover a {
-  color: #5F62A7;
+  color: #62a75f;
   text-decoration: none;
 }
 
 .main-navi ul li.active a {
-  color: #5F62A7;
-  border-top: 4px solid #5F62A7;
+  color: #62a75f;
+  border-top: 4px solid #62a75f;
 }
 
 @media (max-width: 61.938em) {
@@ -677,9 +677,10 @@ Profile Section
 ==================================================================*/
 
 .section-title {
+  margin-bottom: 10px;
+  padding-top: 20px;
 	text-align: center;
 	letter-spacing: 0;
-	margin-bottom: 20px;
 	-webkit-backface-visibility: hidden;
 	   -moz-backface-visibility: hidden;
         -ms-backface-visibility: hidden;
@@ -714,12 +715,12 @@ Profile Section
 
 .consult {
 	text-decoration: line-through;
-	color: #5F62A7;
 }
 
-/* .creative {
+.creative {
 	color: #5F62A7;
-} */
+  font-weight: bold;
+}
 
 .prom a {
 	color: #62a75f;
@@ -733,17 +734,15 @@ Profile Section
 
 .about h3 {
 	text-transform: none;
-	font: 1.313em 'Open Sans', Helvetica, Arial, sans-serif;
+	font: 1em 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	margin-bottom: 22px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 48em) {
 	.about h3 {
-		text-transform: none;
-		font: 1em 'Open Sans', Helvetica, Arial, sans-serif;
-		font-weight: 300;
-		margin-bottom: 22px;
+		font: 1.313em 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
 	}
 }
 
@@ -811,79 +810,70 @@ blockquote {
   content: "\2014 \00A0";
 }
 
-
-
-
 /* ==================================================================
 	Projects Section
 ================================================================== */
-
-.card-block {
-  padding: 1.25em;
-  text-align: center;
-}
 
 .card {
   position: relative;
   display: block;
   margin-bottom: .75em;
   background-color: #fff;
+  border-radius: .25em;
   border: 1px solid #e5e5e5;
-  border-radius: .625em;
 }
 
-.project-title {
-	margin-top: 0;
-	text-align: center;
-	clear: both;
-	color:#5F62A7;
-}
-
-@media (max-width: 47.938rem) and (min-width: 30rem) {
-	.project-title {
-		font-size: 1.0em;
-	}
-}
-
-.project-shot {
-  height: auto;
-  max-width: 100%;
-  border-radius: .375em;
+.card-block {
+  padding: 1.25em;
   text-align: center;
-  margin-bottom: 1.125em;
 }
 
-.proj-link {
-	text-decoration: none;
-  border-radius: .313em;
-  font-size: 1.0em;
-  border: 1px solid #fff;
-  padding: .500rem 1.0em;
-  cursor: pointer;
-  color: #fff;
-  background-color: #62a75f;
-  box-shadow: 0 .125rem .313rem 0 rgba(0, 0, 0, 0.26);
-  transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
+.card-block::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.proj-link:hover {
-  box-shadow: 0 .500rem 1.063rem 0 rgba(0, 0, 0, 0.2);
-  color: #fff;
+.card-title {
+  margin-bottom: .75rem;
+  color: #5F62A7;
 }
 
-@media (max-width: 48rem) {
-	.proj-link {
-		padding: .250em .500em;
-	}
+.card-text:last-child {
+  margin-bottom: 0
 }
 
-@media (max-width: 47.938rem) and (min-width: 30rem) {
-	.proj-link {
-		min-width: 75%;
-		margin-bottom: .625em;
-	}
+.card-img-top {
+  border-top-right-radius: .25rem;
+  border-top-left-radius: .25rem;
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 34rem) {
+  .card-deck {
+    display: table;
+    width: 100%;
+    margin-bottom: .75em;
+    table-layout: fixed;
+    border-spacing: 1.25em 0;
+  }
+
+  .card-deck .card {
+    display: table-cell;
+    margin-bottom: 0;
+    vertical-align: top;
+  }
+
+  .card-deck-wrapper {
+    margin-right: -1.25em;
+    margin-left: -1.25em;
+  }
+}
+
+.card-deck-wrapper {
+  padding-left: .938em;
+  padding-right: .938em;
 }
 
 /* ==================================================================
