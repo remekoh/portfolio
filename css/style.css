@@ -330,6 +330,10 @@ img {
    }
 }
 
+.pbtn {
+  text-transform: uppercase;
+}
+
 /*  ==================================================================
 	Grid/Layout
 ================================================================== */
@@ -740,6 +744,7 @@ Profile Section / Portfolio Header
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   line-height: 1.6em;
+  text-align: justify;
 }
 
 @media (max-width: 48rem) {
@@ -853,9 +858,9 @@ h2.portfolio-title {
 	text-align: center;
 }
 
-.aboutProject{
+/* .aboutProject{
   text-align: justify;
-}
+} */
 
 .p {
   width: 75%;
@@ -895,7 +900,10 @@ h2.portfolio-title {
 .projectImage {
   border-radius: .25em;
   box-shadow: 0 1px 6px rgba(33, 33, 33, 0.12), 0 1px 4px rgba(33, 33, 33, 0.24);
+  text-align: center !important;
+  display: inline-block;
 }
+
 
 .consult {
 	text-decoration: line-through;
