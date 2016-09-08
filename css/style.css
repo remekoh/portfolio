@@ -292,8 +292,8 @@ img {
 
 .btn-success:hover {
   color: #fafafa;
-  background-color: #00b44a;
-  border-color: #00b44a;
+  background-color: #4CAF50;
+  border-color: #4CAF50;
 }
 
 .btn-lg,
@@ -332,6 +332,17 @@ img {
 
 .pbtn {
   text-transform: uppercase;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 /*  ==================================================================
@@ -476,12 +487,16 @@ Header - Navigation
   position: fixed;
   width: 100%;
   top: 0;
+  right: 0;
   left: 0;
   background: #fafafa;
-  border-bottom: 1px ridge #bdbdbd;
+  min-height: 3.125em;
+  margin-bottom: 0;
+  border-bottom: 1px solid transparent;
   box-shadow: 0 1px 6px rgba(33, 33, 33, 0.12), 0 1px 4px rgba(33, 33, 33, 0.24);
-  z-index: 100;
+  z-index: 1030;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 .sticky-header .logo,
@@ -495,21 +510,30 @@ Header - Navigation
   margin-left: 10px;
 }
 
+.sticky-header .logo-mobile {
+  display: none;
+  max-width: 50px;
+  margin-top: 1.125em;
+  margin-left: 0;
+}
+
 .sticky-header .logo img,
 .sticky-header .logo-mobile img {
   max-width: 100%;
 }
 
-@media (max-width: 48em) {
+/* @media (max-width: 48em) {
   .sticky-header .logo,
   .sticky-header .logo-mobile {
     margin-bottom: 1em;
   }
-}
+} */
 
-.sticky-header .logo-mobile {
-  display: none;
-  max-width: 50px;
+@media (max-width: 61.938em) and (min-width: 47.938em) {
+  .sticky-header .logo {
+    margin-top: 0.969em;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 61.938em) {
@@ -564,7 +588,7 @@ Header - Navigation
 }
 
 .main-navi ul li:hover a {
-  color: #00C853;
+  color: #4CAF50;
   text-decoration: none;
 }
 
@@ -580,11 +604,14 @@ Header - Navigation
     width: 100%;
     float: none;
     position: absolute;
-    top: 89px;
+    top: 60px;
     left: 0;
     background-color: #fafafa;
-    border-bottom: 1px solid #00C853;
+    border-bottom: 1px solid transparent;
     z-index:100;
+  }
+  .main-navi.open {
+    display: block
   }
   .main-navi ul li {
     display: block;
@@ -606,7 +633,7 @@ Header - Navigation
     transition: all 300ms ease;
   }
   .main-navi ul li a:hover {
-    color: #00C853;
+    color: #4CAF50;
     text-decoration: none;
   }
   .main-navi ul li.active a {
@@ -617,37 +644,49 @@ Header - Navigation
 }
 
 .navi-toggle {
-  display: none;
-  width: 29px;
+  position: relative;
   float: right;
-  cursor: pointer;
-  margin: 35px 0 0 18px;
+  padding:  9px 10px;
+  margin-top: 0.781em;
+  margin-bottom: 0.781em;
+  background-color: transparent;
+  border: 1px solid #00C853;
+  border-radius: 4px;
 }
 
-.navi-toggle span {
+.navi-toggle .line {
   display: block;
-  float: left;
-  background-color: #263238;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #00C853;
   -webkit-transition: background-color 300ms ease;
   -moz-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
 }
 
+.navi-toggle .line + .line {
+  margin-top: 4px;
+}
+
+/* .navi-toggle span {
+
+  float: left;
+
+  -webkit-transition: background-color 300ms ease;
+  -moz-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+} */
+
 .navi-toggle:hover span {
-  background-color: #263238;
+  background-color: #4CAF50;
 }
 
-.navi-toggle .dot {
-  width: 4px;
-  height: 4px;
-  margin: 0 2px 2px 0;
+.navi-toggle:hover {
+  border-color: #4CAF50;
 }
 
-.navi-toggle .line {
-  width: 23px;
-  height: 4px;
-  margin-bottom: 2px;
-}
+
 
 /*  ==================================================================
 Profile Section / Portfolio Header
@@ -670,7 +709,7 @@ Profile Section / Portfolio Header
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: .063rem ridge #5260ac;
-  margin-top: 1.125em;
+  /* margin-top: 1.125em; */
 }
 
 #portHM {
@@ -680,7 +719,7 @@ Profile Section / Portfolio Header
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: .063rem ridge #5260ac;
-  margin-top: 1.125em;
+  /* margin-top: 1.125em; */
 }
 
 @media (max-width: 28.750em) {
