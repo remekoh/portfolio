@@ -529,7 +529,7 @@ Header - Navigation
   }
 } */
 
-@media (max-width: 61.938em) and (min-width: 47.938em) {
+@media (max-width: 61.938em) and (min-width: 48em) {
   .sticky-header .logo {
     margin-top: 0.969em;
     margin-left: 0;
@@ -542,7 +542,7 @@ Header - Navigation
   }
 }
 
-@media (max-width: 28.750em) {
+@media (max-width: 48em) {
   .sticky-header .logo {
     display: none;
   }

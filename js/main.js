@@ -285,7 +285,7 @@ $(document).ready(function(e) {
       }
     }
     return false;
-  }
+  };
 
   $(function() {
     availabilityCalendar();
@@ -295,6 +295,24 @@ $(document).ready(function(e) {
   var today = new Date();
   var weekdays = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
   var day = weekdays[today.getDay()];
-  $('#happyday').append("Enjoy the rest of this great " + day + "!");
+  var adjectiveWords = ["blessed", "awesome", "great", "fabulous", "wonderful", "beautiful", "gorgeous", "amazing"]
+  function getRandomAdjective(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  };
+  var adjectiveText = adjectiveWords[getRandomAdjective(0, adjectiveWords.length)];
+
+  $('#happyday').append("Enjoy the rest of this " + adjectiveText + " " + day + "!");
 
 }); /*/End Document ready*/
+
+
+
+
+
+
+
+
+
+
+
+
