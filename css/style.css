@@ -205,9 +205,10 @@ p {
 }
 
 a,
+a:hover,
 a:active,
-a:focus,
-a:hover {
+a:focus
+ {
 	outline: 0;
 	color: inherit;
 	text-decoration: none;
@@ -953,12 +954,12 @@ h2.portfolio-title {
   font-weight: bold;
 }
 
-.prom a {
+.extLink {
 	color: #00C853;
 	text-decoration: none;
 }
 
-.prom a:hover {
+.extLink:hover {
 	color: #00C853;
 	border-bottom: .08rem solid #00C853;
 }
