@@ -1567,7 +1567,38 @@ blockquote {
 	Extra
 ================================================================== */
 
-.brand { color: #5C6BC0; }
+#scroll-top {
+  position: fixed;
+  z-index: 10;
+  right: -3.125em;
+  bottom: 0.625em;
+  width: 2.813em;
+  height: 2.813em;
+  color: #fafafa;
+  text-align: center;
+  background-color: #263238;
+  padding-top: 12px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+#scroll-top i {
+  font-size: 1.3em;
+  color: #fafafa;
+}
+
+#scroll-top:hover {
+  background-color: #455A64;
+}
+
+#scroll-top.visible {
+  right: 0.625em;
+}
 
 /* ==========================================================================
  Helper classes
